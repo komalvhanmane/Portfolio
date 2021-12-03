@@ -6,7 +6,7 @@
     text-decoration: none;
 }
 .Navbar ul a li{
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #ffff;
 }
 .Navbar ul a :hover{
