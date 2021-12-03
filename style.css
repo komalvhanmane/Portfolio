@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*-----Navigation Bar--8A2BE1----*/
+.Navbar {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: row;
+    background: #cb7d5a;
+    height: 80px;
+}
+.Navbar ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.Navbar ul a{
+    padding: 25px;
+    text-decoration: none;
+    
+}
+.Navbar ul a li{
+    font-size: 1.5rem;
+    color: #ffff;
+}
+.Navbar ul a :hover{
+    font-size: 1.5rem;
+    color: black;
+}
+/*---------home----------*/
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#home .image{
+    width: 50%;
+}
+#home .image img{
+    height: 600px;
+}
+#home .name {
+    font-family: 'Estonia', cursive;
+    font-family: 'Slabo 27px', serif; 
+    font-size: 3rem; 
+}
+#home .name h1{
+    font-size: 3rem; 
+    color: #b4464b;
+}
+.btn{
+    padding: 10px;
+    font-size: 1.2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color:  #f5d7af;
+    color: #cb7d5a;
+    cursor: pointer;
+    border-color: #f5d7af;
+}
+.btn:hover{
+    background-color:  #cb7d5a;
+    border-color: #cb7d5a;
+    color: white;
+}
+/*---------About Section----------*/
+#about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #f5d7af;
+}
+#about .box{
+    margin: 100px;
+    width: 33.30%;
+}
+#about .box img{
+    height: 350px;
+    border-radius: 250px;
+}
+#about .box h1{
+    text-align: center;
+}
+#about .box p{
+    text-align: center;
+    padding: 15px;
+    font-size: 1.3rem;
+}
+/*Timeline*/
+#Education{
+    margin-top: 50px;
+    background-color: rgb(252, 193, 148);
+}
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+  }
+  
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+    /* Place the timelime to the left */
+    .timeline::after {
+    left: 31px;
+    }
+    
+    /* Full-width containers */
+    .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+    
+    /* Make sure that all arrows are pointing leftwards */
+    .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+    }
+  
+    /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+    left: 15px;
+    }
+    
+    /* Make all right containers behave like the left ones */
+    .right {
+    left: 0%;
+    }
+  }
+  /*-----------Skills-----------*/
+  #skills{
+    margin-top: 50px;
+      padding: 20px;
+      background-color: #cb7d5a;
+  }
+  #skills .box1{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+  }
+  #skills .box1 img{
+   height: 70px;
+   padding: 40px;
+  }
+  #skills .box1 h3{
+    color: white;
+}
+  #skills .box1 h3:hover{
+      color:black;
+  }
+  /*-------Contact------*/
+  #contact{
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #b4464b;
+    color: white;
+  }
+.box1 img{
+    height: 70px;
+    padding: 40px;
+}
+.box1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
