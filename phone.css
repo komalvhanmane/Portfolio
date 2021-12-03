@@ -1,0 +1,67 @@
+.Navbar {
+    height: 40px;
+}
+.Navbar ul a{
+    padding: 5px;
+    text-decoration: none;
+}
+.Navbar ul a li{
+    font-size: 1rem;
+    color: #ffff;
+}
+.Navbar ul a :hover{
+    font-size: 1rem;
+    color: black;
+}
+/*---------home----------*/
+#home{
+    flex-direction: column;
+}
+#home .image{
+    width: 100%;
+}
+#home .image img{
+    height: 400px;
+}
+#home .name {
+    font-size: 2rem; 
+}
+#home .name h1{
+    font-size: 2rem; 
+}
+/*---------About Section----------*/
+#about{
+    margin-top: 50px;
+    flex-direction: column;
+}
+#about .box{
+    margin: 10px;
+    width: 100%;
+}
+#about .box img{
+    height: 350px;
+    border-radius: 250px;
+}
+#about .box h1{
+    text-align: center;
+}
+#about .box p{
+    text-align: center;
+    padding: 15px;
+    font-size: 1.3rem;
+}
+/*--Timeline--*/
+.timeline {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+/*-skills-*/
+#skills{
+     margin-top: 10px;
+     padding: 10px;
+ }
+ #skills .box1 img{
+  height: 60px;
+  padding: 20px;
+ }
